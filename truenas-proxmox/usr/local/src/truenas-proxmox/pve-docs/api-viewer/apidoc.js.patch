@@ -1,0 +1,91 @@
+--- apidoc.js.9	2025-08-23 20:36:15.616622652 +0400
++++ apidoc.js	2025-08-23 20:37:13.288353587 +0400
+@@ -56268,6 +56268,37 @@
+                            "type" : "string",
+                            "typetext" : "<string>"
+                         },
++                        "freenas_user" : {
++                           "description" : "FreeNAS user for API access",
++                           "optional" : 1,
++                           "type" : "string",
++                           "typetext" : "<string>"
++                        },
++                        "freenas_password" : {
++                           "description" : "FreeNAS password for API access (Deprecated)",
++                           "optional" : 1,
++                           "type" : "string",
++                           "typetext" : "<string>"
++                        },
++                        "truenas_secret" : {
++                           "description" : "TrueNAS Secret for API access",
++                           "optional" : 1,
++                           "type" : "string",
++                           "typetext" : "<string>"
++                        },
++                        "freenas_use_ssl" : {
++                           "description" : "FreeNAS API access via SSL",
++                           "optional" : 1,
++                           "type" : "boolean",
++                           "typetext" : "<boolean>"
++                        },
++                        "freenas_apiv4_host" : {
++                           "description" : "FreeNAS API Host via IPv4",
++                           "format" : "address",
++                           "optional" : 1,
++                           "type" : "string",
++                           "typetext" : "<string>"
++                        },
+                         "fuse" : {
+                            "description" : "Mount CephFS through FUSE.",
+                            "optional" : 1,
+@@ -56487,6 +56518,12 @@
+                            "type" : "boolean",
+                            "typetext" : "<boolean>"
+                         },
++                        "target" : {
++                           "description" : "iSCSI target.",
++                           "optional" : 1,
++                           "type" : "string",
++                           "typetext" : "<string>"
++                        },
+                         "username" : {
+                            "description" : "RBD Id.",
+                            "optional" : 1,
+@@ -56787,6 +56824,37 @@
+                      "optional" : 1,
+                      "type" : "string",
+                      "typetext" : "<string>"
++                  },
++                  "freenas_user" : {
++                     "description" : "FreeNAS user for API access",
++                     "optional" : 1,
++                     "type" : "string",
++                     "typetext" : "<string>"
++                  },
++                  "freenas_password" : {
++                     "description" : "FreeNAS password for API access (Deprecated)",
++                     "optional" : 1,
++                     "type" : "string",
++                     "typetext" : "<string>"
++                  },
++                  "truenas_secret" : {
++                     "description" : "TrueNAS secret for API access",
++                     "optional" : 1,
++                     "type" : "string",
++                     "typetext" : "<string>"
++                  },
++                  "freenas_use_ssl" : {
++                     "description" : "FreeNAS API access via SSL",
++                     "optional" : 1,
++                     "type" : "boolean",
++                     "typetext" : "<boolean>"
++                  },
++                  "freenas_apiv4_host" : {
++                     "description" : "FreeNAS API Host via IPv4",
++                     "format" : "address",
++                     "optional" : 1,
++                     "type" : "string",
++                     "typetext" : "<string>"
+                   },
+                   "fuse" : {
+                      "description" : "Mount CephFS through FUSE.",
