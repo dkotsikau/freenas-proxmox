@@ -1,0 +1,17 @@
+Source: truenas-proxmox
+Section: perl
+Priority: optional
+Maintainer: Dzmitry Kotsikau <dkotsikau@gmail.com>
+Uploaders: Dzmitry Kotsikau <dkotsikau@gmial.com>
+Depends: librest-client-perl
+Standards-Version: 4.5.0
+Vcs-Git: https://github.com/dkotsikau/freenas-proxmox.git
+Vcs-Browser: https://github.com/dkotsikau/freenas-proxmox.git
+Homepage: https://github.com/TheGrandWazoo/freenas-proxmox/wiki
+Package: truenas-proxmox
+Architecture: all
+Version: 3.0-pve-9
+Pre-Depends: librest-client-perl
+Provides: truenas-proxmox
+Description: TrueNAS Plugin for Proxmox VE
+ A Proxmox VE storage plugin to interface with TrueNAS APIs.
